@@ -1,0 +1,32 @@
+@import url(style3.css);
+@import url(sectionCaptions.css);
+nav {
+  padding-bottom: 1%;
+  border-bottom: 5px solid #000000;
+  position: fixed; }
+  nav .menuBars {
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin-top: 1.25%;
+    font-size: 2em; }
+  nav .logo {
+    cursor: pointer;
+    text-align: center; }
+
+header {
+  height: 85vh;
+  border-bottom: 5px solid #000000; }
+  header h1 {
+    text-align: center;
+    margin-top: 20%; }
+
+section {
+  height: 80vh;
+  border-bottom: 5px solid #000000;
+  overflow: hidden; }
+  section h1 {
+    text-align: center;
+    margin-top: 20%; }
+
+/*# sourceMappingURL=style.css.map */

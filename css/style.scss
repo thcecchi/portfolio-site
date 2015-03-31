@@ -1,0 +1,47 @@
+@import 'style3.css';
+@import 'sectionCaptions.css';
+
+nav {
+  padding-bottom: 1%;
+  // background: lightgray;
+  border-bottom: 5px solid #000000;
+  position: fixed;
+
+  .menuBars {
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin-top: 1.25%;
+    font-size: 2em;
+  }
+
+  .logo {
+    cursor: pointer;
+    text-align: center;
+  }
+}
+
+header {
+  height: 85vh;
+  border-bottom: 5px solid #000000;
+
+  h1 {
+    text-align: center;
+    margin-top: 20%;
+  }
+}
+
+section {
+  height: 80vh;
+  border-bottom: 5px solid #000000;
+  overflow: hidden;
+
+  h1 {
+    text-align: center;
+    margin-top: 20%;
+  }
+
+  // &:hover {
+  //   background: rgba(0, 0, 0,0.3);
+  // }
+}
