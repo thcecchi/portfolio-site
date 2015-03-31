@@ -48,7 +48,7 @@ header {
     }
 
     h2 {
-      font-family: "helvetica", sans-serif;
+      font-family: "Helvetica", sans-serif;
       font-weight: 100;
       font-size: 3em;
       width: 75%;
@@ -59,8 +59,13 @@ header {
 
 section {
   height: 80vh;
-  border-bottom: 5px solid #000000;
+  // border-top: 5px solid #000000;
+  // border-bottom: 5px solid #000000;
   overflow: hidden;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  cursor: pointer;
+
 
   h1 {
     text-align: center;
