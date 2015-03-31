@@ -1,5 +1,6 @@
 /* Overlay style */
 .overlay {
+	padding-top: 3%;
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -9,7 +10,7 @@
 }
 
 /* Overlay closing cross */
-.overlay .overlay-close {
+/*.overlay .overlay-close {
 	width: 20px;
 	height: 20px;
 	position: absolute;
@@ -22,7 +23,7 @@
 	color: transparent;
 	outline: none;
 	z-index: 100;
-}
+}*/
 
 /* Menu style */
 .overlay nav {
@@ -39,7 +40,7 @@
 	padding: 0;
 	margin: 0 auto;
 	margin-top: 5%;
-	margin-left: 40%;
+	margin-left: 42%;
 	display: inline-block;
 	height: 100%;
 	position: relative;
@@ -66,7 +67,7 @@
 .overlay ul li a:hover,
 .overlay ul li a:focus {
 	text-decoration: none;
-	color: #FF3800;
+	color: #BA0C2F;;
 }
 
 /* Effects */

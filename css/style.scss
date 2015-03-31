@@ -1,11 +1,14 @@
 @import 'style3.css';
 @import 'sectionCaptions.css';
 
-nav {
+$red: #BA0C2F;
+
+
+.main-nav {
+  padding-top: 1%;
   padding-bottom: 1%;
-  // background: lightgray;
-  border-bottom: 5px solid #000000;
-  position: fixed;
+  z-index: 150;
+  position: relative;
 
   .menuBars {
     cursor: pointer;
@@ -13,21 +16,44 @@ nav {
     display: block;
     margin-top: 1.25%;
     font-size: 2em;
+    color: $red;
   }
 
   .logo {
     cursor: pointer;
     text-align: center;
+    color: $red;
   }
+}
+
+.main-nav-scrolled {
+  border-bottom: 10px solid #000000;
+  background: white;
 }
 
 header {
   height: 85vh;
   border-bottom: 5px solid #000000;
 
-  h1 {
-    text-align: center;
-    margin-top: 20%;
+  .headerBlock {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+    h1 {
+      text-align: left;
+      margin-top: 20%;
+      font-size: 5em;
+      color: $red;
+    }
+
+    h2 {
+      font-family: "helvetica", sans-serif;
+      font-weight: 100;
+      font-size: 3em;
+      width: 75%;
+      color: gray;
+    }
   }
 }
 

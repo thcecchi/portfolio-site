@@ -1,25 +1,44 @@
 @import url(style3.css);
 @import url(sectionCaptions.css);
-nav {
+.main-nav {
+  padding-top: 1%;
   padding-bottom: 1%;
-  border-bottom: 5px solid #000000;
-  position: fixed; }
-  nav .menuBars {
+  z-index: 150;
+  position: relative; }
+  .main-nav .menuBars {
     cursor: pointer;
     text-align: center;
     display: block;
     margin-top: 1.25%;
-    font-size: 2em; }
-  nav .logo {
+    font-size: 2em;
+    color: #BA0C2F; }
+  .main-nav .logo {
     cursor: pointer;
-    text-align: center; }
+    text-align: center;
+    color: #BA0C2F; }
+
+.main-nav-scrolled {
+  border-bottom: 10px solid #000000;
+  background: white; }
 
 header {
   height: 85vh;
   border-bottom: 5px solid #000000; }
-  header h1 {
-    text-align: center;
-    margin-top: 20%; }
+  header .headerBlock {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto; }
+    header .headerBlock h1 {
+      text-align: left;
+      margin-top: 20%;
+      font-size: 5em;
+      color: #BA0C2F; }
+    header .headerBlock h2 {
+      font-family: "helvetica", sans-serif;
+      font-weight: 100;
+      font-size: 3em;
+      width: 75%;
+      color: gray; }
 
 section {
   height: 80vh;
