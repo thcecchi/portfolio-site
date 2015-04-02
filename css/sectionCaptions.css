@@ -1,9 +1,18 @@
 .cs-style-3 section img {
+  display: inline-block;
   width: 100%;
-  height: 100%;
-	-webkit-transition: -webkit-transform 0.4s;
-	-moz-transition: -moz-transform 0.4s;
-	transition: transform 0.4s;
+  height: 60vh;
+  border: 5px solid black;
+}
+
+.imgNormal {
+  // width: 100%;
+  // height: 80vh;
+  -webkit-transition: width 2s, -webkit-transform 2s;
+  -moz-transition: width 2s, -moz-transform 2s;
+  -ms-transform: width 2s, -ms-transform 2s;
+  -o-transform: width 2s, -o-transform 2s;
+  transition: width 2s, transform 2s;
 }
 
 .cs-style-3 section:hover img,
@@ -12,12 +21,14 @@
 	-moz-transform: translateY(-0px);
 	-ms-transform: translateY(-0px);
 	transform: translateY(-0px);
-  -webkit-filter: blur(3px); filter: blur(3px);
+  // -webkit-filter: blur(2px); filter: blur(2px);
+  /*background: rgba(0, 0, 0, 0.3);*/
 }
 
 .cs-style-3 figcaption {
 	height: 100px;
 	width: 100%;
+  margin-top: -225px;
 	top: auto;
   text-align: center;
 	bottom: 0;
@@ -34,10 +45,10 @@
 .cs-style-3 section:hover figcaption,
 .cs-style-3 section.cs-hover figcaption {
 	opacity: 1;
-	-webkit-transform: translateY(-300px);
-	-moz-transform: translateY(-300px);
-	-ms-transform: translateY(-300px);
-	transform: translateY(-300px);
+	-webkit-transform: translateY(-75px);
+	-moz-transform: translateY(-75px);
+	-ms-transform: translateY(-75px);
+	transform: translateY(-75px);
 	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
 	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
 	transition: transform 0.4s, opacity 0.1s;
@@ -51,4 +62,9 @@
 
 .cs-style-3 figcaption h3 {
 	color: #BA0C2F;
+  font-size: 4em;
+}
+
+.cs-style-3 figcaption span {
+  font-size: 2.5em;
 }
