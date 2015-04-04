@@ -1,25 +1,23 @@
-$('section').on('click', 'img', function () {
+$('section').on('click', 'img, figcaption, description', function () {
   $(this).siblings('.description').addClass('showDescription');
 
-  $('figcaption').toggleClass('hide')
 
   if($('.description').hasClass('clicked')) {
-    $(this).siblings('.description').addClass('fadeOutUp');
-    $(this).siblings('.description').removeClass('fadeInDown clicked');
+    $(this).siblings('.description').addClass('fadeOut');
+    $(this).siblings('.description').removeClass('fadeIn clicked');
 
-    $('figcaption').addClass('fadeOutDown')
-    $('figcaption').removeClass('fadeinUp')
+    // $('figcaption').addClass('fadeInUp')
+    // $('figcaption').removeClass('hide')
 
   }
 
   else {
-    $(this).siblings('.description').addClass('fadeInDown clicked');
-    $(this).siblings('.description').removeClass('fadeOutUp');
+    $(this).siblings('.description').addClass('fadeIn clicked');
+    $(this).siblings('.description').removeClass('fadeOut');
 
-    $('figcaption').addClass('fadeInUp')
-    $('figcaption').removeClass('fadeOutDown')
+    // $('figcaption').addClass('hide')
+    // $('figcaption').removeClass('fadeInUp')
   }
-
 
   console.log('whee?')
 })

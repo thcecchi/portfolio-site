@@ -1,9 +1,14 @@
 @import 'style3.css';
 @import 'sectionCaptions.css';
+@import 'workOverlay.css';
+
 
 $red: #BA0C2F;
 
-
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
 .main-nav {
   padding-top: 1%;
   padding-bottom: 1%;
@@ -23,17 +28,22 @@ $red: #BA0C2F;
     cursor: pointer;
     text-align: center;
     color: $red;
+    font-size: 2em;
   }
 }
 
 .main-nav-scrolled {
-  border-bottom: 10px solid #000000;
+  padding: 0;
   background: white;
+  position: fixed;
+  width: 98%;
+  top: 0;
+  border-bottom: 7px solid black;
 }
 
 header {
-  height: 85vh;
-  border-bottom: 5px solid #000000;
+  height: 86vh;
+  border-bottom: 7px solid #000000;
 
   .headerBlock {
     width: 75%;
@@ -45,6 +55,8 @@ header {
       margin-top: 20%;
       font-size: 5em;
       color: $red;
+      // -webkit-animation: type 4s steps(60, end);
+      // animation: type 4s steps(60, end);
     }
 
     h2 {
@@ -53,17 +65,21 @@ header {
       font-size: 3em;
       width: 75%;
       color: gray;
+      // -webkit-animation: type2 8s steps(60, end);
+      // animation: type2 8s steps(60, end);
     }
   }
 }
 
+.sectionTitle {
+  text-align: center;
+  font-size: 4em;
+  color: $red;
+}
+
 section {
-  height: 100vh;
-  // border-top: 5px solid #000000;
-  // border-bottom: 5px solid #000000;
-  overflow: hidden;
+  // height: 100vh;
   margin-top: 3%;
-  margin-bottom: 3%;
   cursor: pointer;
   width: 100%;
 
@@ -78,14 +94,31 @@ section {
 
 
   &.showDescription {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
     display: inline-block;
-    border-right: 5px solid black;
-    border-bottom: 5px solid black;
-    border-left: 5px solid black;
-    width: 100%;
+    border-top: 7px solid black;
+    border-right: 7px solid black;
+    border-bottom: 7px solid black;
+    border-left: 7px solid black;
+    background: lightgray;
+   margin: 0 auto;
   }
 }
 
 .hide {
   display: none;
+}
+
+.about {
+  position: relative;
+}
+
+.aboutSignoff {
+  width: 100%;
+  margin-top: 10%;
 }

@@ -1,0 +1,38 @@
+// .workItem {
+//   transition: all .3s ease-out;
+//
+//   &.workItem--active {
+//     cursor: default;
+//   }
+//
+// }
+//
+// .description {
+//   width: 100vw;
+//   height: 100vh;
+//   // padding: 0 10vw;
+//   z-index: 100;
+//   transform: scale(0.7);
+//   // opacity: 0;
+//   // visibility: hidden;
+//
+//   &.description--active {
+//     animation: enter .4s ease-out;
+//     animation-delay: .2s;
+//     animation-fill-mode: forwards;
+//     // visibility: visible;
+//   }
+//
+// }
+//
+// @keyframes enter {
+//   0% {
+//     transform: scale(0.7);
+//     opacity: 0;
+//   }
+//
+//   100% {
+//     transform: scale(1);
+//     opacity: 1;
+//   }
+// }
