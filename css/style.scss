@@ -89,26 +89,29 @@ section {
   }
 }
 
-.description {
-  display: none;
-
-
-  &.showDescription {
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    display: inline-block;
-    border-top: 7px solid black;
-    border-right: 7px solid black;
-    border-bottom: 7px solid black;
-    border-left: 7px solid black;
-    background: lightgray;
-   margin: 0 auto;
-  }
-}
+// .description {
+//   display: none;
+//   transition: width .5s, height .5s;
+//   -webkit-transition: width .5s, height .5s;
+//
+//
+//
+//   &.showDescription {
+//     height: 100vh;
+//     width: 100%;
+//     // position: absolute;
+//     // top: 0;
+//     // left: 0;
+//     z-index: 999;
+//     display: inline-block;
+//     border-top: 7px solid black;
+//     border-right: 7px solid black;
+//     border-bottom: 7px solid black;
+//     border-left: 7px solid black;
+//     background: lightgray;
+//   //  margin: 0 auto;
+//   }
+// }
 
 .hide {
   display: none;

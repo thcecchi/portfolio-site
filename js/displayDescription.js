@@ -4,7 +4,7 @@ $('section').on('click', 'img, figcaption, description', function () {
 
   if($('.description').hasClass('clicked')) {
     $(this).siblings('.description').addClass('fadeOut');
-    $(this).siblings('.description').removeClass('fadeIn clicked');
+    $(this).removeClass('fadeIn clicked');
 
     // $('figcaption').addClass('fadeInUp')
     // $('figcaption').removeClass('hide')
