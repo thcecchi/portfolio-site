@@ -2,15 +2,15 @@
 
 .workItem {
   transition: all 1s, ease 1s;
-  transition: translate ease 1s;
+  // transition: translate ease 1s;
 }
 
 .active {
-  transition-property: left, top;
+  transition-property: transform;
   transition-duration: 1s, 1s;
   transition-delay: 0;
   transition-timing-function: ease;
-  left: 37.5%;
+  // transform: translate(-10px);
   // top: 40%;
 
 }

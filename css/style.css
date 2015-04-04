@@ -66,6 +66,9 @@ section {
 .hide {
   display: none; }
 
+.invis {
+  opacity: 0; }
+
 .about {
   position: relative; }
 
