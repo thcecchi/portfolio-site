@@ -1,9 +1,11 @@
 @import 'style3.css';
-@import 'sectionCaptions.css';
-@import 'workOverlay.css';
-
 
 $red: #BA0C2F;
+
+.container-fluid {
+  padding: 0;
+  overflow-y: hidden;
+}
 
 .row {
   margin-left: 0px;
@@ -36,7 +38,7 @@ $red: #BA0C2F;
   padding: 0;
   background: white;
   position: fixed;
-  width: 98%;
+  width: 100%;
   top: 0;
   border-bottom: 7px solid black;
 }
@@ -77,11 +79,10 @@ header {
   color: $red;
 }
 
-section {
-  // height: 100vh;
+.workItem {
+  transition: all 1s, ease 1s;
   margin-top: 3%;
   cursor: pointer;
-  width: 100%;
 
   h1 {
     text-align: center;
@@ -89,29 +90,31 @@ section {
   }
 }
 
-// .description {
-//   display: none;
-//   transition: width .5s, height .5s;
-//   -webkit-transition: width .5s, height .5s;
-//
-//
-//
-//   &.showDescription {
-//     height: 100vh;
-//     width: 100%;
-//     // position: absolute;
-//     // top: 0;
-//     // left: 0;
-//     z-index: 999;
-//     display: inline-block;
-//     border-top: 7px solid black;
-//     border-right: 7px solid black;
-//     border-bottom: 7px solid black;
-//     border-left: 7px solid black;
-//     background: lightgray;
-//   //  margin: 0 auto;
-//   }
-// }
+.cs-style-3 section img {
+  display: inline-block;
+  padding: 0;
+  height: 50vh;
+  border: 7px solid black;
+  width: 100%;
+}
+
+.imgNormal {
+  -webkit-transition: width 2s, -webkit-transform 2s;
+  -moz-transition: width 2s, -moz-transform 2s;
+  -ms-transform: width 2s, -ms-transform 2s;
+  -o-transform: width 2s, -o-transform 2s;
+  transition: width 2s, transform 2s;
+}
+
+.description {
+    display: inline-block;
+
+    h1 {
+      text-align: left;
+      color: $red;
+    }
+}
+
 
 .hide {
   display: none;
@@ -123,9 +126,37 @@ section {
 
 .about {
   position: relative;
+  background-image: -webkit-linear-gradient(bottom, hsl(100,500%,500%), rgba(255,255,255,0) 50%), url("../img/bio.png");
+  background-size: cover;
+  z-index: -9999;
+
+  h4 {
+    opacity: 1;
+  }
+
+  h1 {
+    color: $red;
+    opacity: 1;
+  }
+
 }
 
 .aboutSignoff {
   width: 100%;
   margin-top: 10%;
+}
+
+.parallax {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+html {
+  text-decoration: none;
 }

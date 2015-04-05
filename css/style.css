@@ -1,6 +1,8 @@
 @import url(style3.css);
-@import url(sectionCaptions.css);
-@import url(workOverlay.css);
+.container-fluid {
+  padding: 0;
+  overflow-y: hidden; }
+
 .row {
   margin-left: 0px;
   margin-right: 0px; }
@@ -27,7 +29,7 @@
   padding: 0;
   background: white;
   position: fixed;
-  width: 98%;
+  width: 100%;
   top: 0;
   border-bottom: 7px solid black; }
 
@@ -55,13 +57,33 @@ header {
   font-size: 4em;
   color: #BA0C2F; }
 
-section {
+.workItem {
+  transition: all 1s, ease 1s;
   margin-top: 3%;
-  cursor: pointer;
-  width: 100%; }
-  section h1 {
+  cursor: pointer; }
+  .workItem h1 {
     text-align: center;
     margin-top: 20%; }
+
+.cs-style-3 section img {
+  display: inline-block;
+  padding: 0;
+  height: 50vh;
+  border: 7px solid black;
+  width: 100%; }
+
+.imgNormal {
+  -webkit-transition: width 2s, -webkit-transform 2s;
+  -moz-transition: width 2s, -moz-transform 2s;
+  -ms-transform: width 2s, -ms-transform 2s;
+  -o-transform: width 2s, -o-transform 2s;
+  transition: width 2s, transform 2s; }
+
+.description {
+  display: inline-block; }
+  .description h1 {
+    text-align: left;
+    color: #BA0C2F; }
 
 .hide {
   display: none; }
@@ -70,10 +92,31 @@ section {
   opacity: 0; }
 
 .about {
-  position: relative; }
+  position: relative;
+  background-image: -webkit-linear-gradient(bottom, white, rgba(255, 255, 255, 0) 50%), url("../img/bio.png");
+  background-size: cover;
+  z-index: -9999; }
+  .about h4 {
+    opacity: 1; }
+  .about h1 {
+    color: #BA0C2F;
+    opacity: 1; }
 
 .aboutSignoff {
   width: 100%;
   margin-top: 10%; }
+
+.parallax {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
+html {
+  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
