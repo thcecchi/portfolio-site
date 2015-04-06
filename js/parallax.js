@@ -14,7 +14,7 @@ function parallaxIt() {
     var yPos;
 
     $fwindow.on('scroll resize', function (){
-      yPos = fgOffset - (scrollTop/5) / ($contentObj.data('speed') || 1.1 );
+      yPos = fgOffset - (scrollTop/5) / ($contentObj.data('speed') || 1.2 );
 
       $contentObj.css('top', yPos);
     });

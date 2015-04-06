@@ -5,6 +5,20 @@ $red: #BA0C2F;
 .container-fluid {
   padding: 0;
   overflow-y: hidden;
+  border-bottom: 7px solid black;
+  padding-bottom: 20%;
+
+  &.top-layer {
+    z-index: 999999;
+    position: absolute;
+  }
+
+  &.bottom-layer {
+    z-index: -9999999;
+    background: blue;
+    height: 100px;
+    bottom: 1px;
+  }
 }
 
 .row {
@@ -77,6 +91,7 @@ header {
   text-align: center;
   font-size: 4em;
   color: $red;
+  text-shadow: 0px;
 }
 
 .workItem {
@@ -96,6 +111,11 @@ header {
   height: 50vh;
   border: 7px solid black;
   width: 100%;
+
+  &:hover + .links {
+    visibility: visible;
+  }
+
 }
 
 .imgNormal {
@@ -116,9 +136,9 @@ header {
 }
 
 
-.hide {
-  display: none;
-}
+// .hide {
+//   display: none;
+// }
 
 .invis {
   opacity: 0;
@@ -126,24 +146,30 @@ header {
 
 .about {
   position: relative;
-  background-image: -webkit-linear-gradient(bottom, hsl(100,500%,500%), rgba(255,255,255,0) 50%), url("../img/bio.png");
+  background-image: -webkit-linear-gradient(bottom, hsl(100,500%,500%), rgba(255,255,255,.1) 50%), url("../img/bio2.png");
   background-size: cover;
   z-index: -9999;
 
+  .sectionTitle {
+    text-shadow: none;
+  }
+
   h4 {
     opacity: 1;
+    // text-shadow: 1px 1px #dbdbdb;
   }
 
   h1 {
     color: $red;
     opacity: 1;
+    text-shadow: 1px 1px #f0f0f0;
   }
 
 }
 
 .aboutSignoff {
   width: 100%;
-  margin-top: 10%;
+  // margin-top: 10%;
 }
 
 .parallax {
@@ -157,6 +183,45 @@ header {
   overflow-y: scroll;
 }
 
-html {
-  text-decoration: none;
+.links {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  visibility: hidden;
+  width: 50%;
+
+  ul {
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      font-size: 4em;
+      margin-left: 5%;
+      margin-right: 5%;
+
+      a {
+        color: #333333;
+        text-decoration: none;
+
+        &:hover {
+          color: $red;
+        }
+      }
+
+    }
+
+  }
+
+  &:hover {
+    visibility: visible;
+  }
+}
+
+.contact {
+  z-index: -9999999;
+  position: fixed;
+  width: 100%;
+  bottom: 1px;
+  left: 1px;
+  padding-bottom: 4%;
 }

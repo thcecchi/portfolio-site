@@ -1,7 +1,17 @@
 @import url(style3.css);
 .container-fluid {
   padding: 0;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  border-bottom: 7px solid black;
+  padding-bottom: 20%; }
+  .container-fluid.top-layer {
+    z-index: 999999;
+    position: absolute; }
+  .container-fluid.bottom-layer {
+    z-index: -9999999;
+    background: blue;
+    height: 100px;
+    bottom: 1px; }
 
 .row {
   margin-left: 0px;
@@ -55,7 +65,8 @@ header {
 .sectionTitle {
   text-align: center;
   font-size: 4em;
-  color: #BA0C2F; }
+  color: #BA0C2F;
+  text-shadow: 0px; }
 
 .workItem {
   transition: all 1s, ease 1s;
@@ -71,6 +82,8 @@ header {
   height: 50vh;
   border: 7px solid black;
   width: 100%; }
+  .cs-style-3 section img:hover + .links {
+    visibility: visible; }
 
 .imgNormal {
   -webkit-transition: width 2s, -webkit-transform 2s;
@@ -85,26 +98,25 @@ header {
     text-align: left;
     color: #BA0C2F; }
 
-.hide {
-  display: none; }
-
 .invis {
   opacity: 0; }
 
 .about {
   position: relative;
-  background-image: -webkit-linear-gradient(bottom, white, rgba(255, 255, 255, 0) 50%), url("../img/bio.png");
+  background-image: -webkit-linear-gradient(bottom, white, rgba(255, 255, 255, 0.1) 50%), url("../img/bio2.png");
   background-size: cover;
   z-index: -9999; }
+  .about .sectionTitle {
+    text-shadow: none; }
   .about h4 {
     opacity: 1; }
   .about h1 {
     color: #BA0C2F;
-    opacity: 1; }
+    opacity: 1;
+    text-shadow: 1px 1px #f0f0f0; }
 
 .aboutSignoff {
-  width: 100%;
-  margin-top: 10%; }
+  width: 100%; }
 
 .parallax {
   position: fixed;
@@ -116,7 +128,33 @@ header {
   overflow-x: hidden;
   overflow-y: scroll; }
 
-html {
-  text-decoration: none; }
+.links {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  visibility: hidden;
+  width: 50%; }
+  .links ul {
+    list-style-type: none; }
+    .links ul li {
+      display: inline-block;
+      font-size: 4em;
+      margin-left: 5%;
+      margin-right: 5%; }
+      .links ul li a {
+        color: #333333;
+        text-decoration: none; }
+        .links ul li a:hover {
+          color: #BA0C2F; }
+  .links:hover {
+    visibility: visible; }
+
+.contact {
+  z-index: -9999999;
+  position: fixed;
+  width: 100%;
+  bottom: 1px;
+  left: 1px;
+  padding-bottom: 4%; }
 
 /*# sourceMappingURL=style.css.map */
