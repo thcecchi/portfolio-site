@@ -6,18 +6,19 @@ $red: #BA0C2F;
   padding: 0;
   overflow-y: hidden;
   border-bottom: 7px solid black;
+  background: white;
   padding-bottom: 20%;
 
   &.top-layer {
     z-index: 999999;
-    position: absolute;
+    position: relative;
+    box-shadow: 5px 5px 10px #888888;
+    padding-bottom: 10%;
   }
 
   &.bottom-layer {
-    z-index: -9999999;
-    background: blue;
-    height: 100px;
-    bottom: 1px;
+    z-index: -999999;
+    background: white;
   }
 }
 
@@ -146,13 +147,10 @@ header {
 
 .about {
   position: relative;
-  background-image: -webkit-linear-gradient(bottom, hsl(100,500%,500%), rgba(255,255,255,.1) 50%), url("../img/bio2.png");
+  background-image: -webkit-linear-gradient(bottom, hsl(100,100%,300%), rgba(255,255,255,.1) 50%), url("../img/bio3.png");
   background-size: cover;
   z-index: -9999;
-
-  .sectionTitle {
-    text-shadow: none;
-  }
+  opacity: .9;
 
   h4 {
     opacity: 1;
@@ -165,11 +163,16 @@ header {
     text-shadow: 1px 1px #f0f0f0;
   }
 
+  .aboutSignoff {
+    width: 100%;
+    // margin-top: 10%;
+  }
+
 }
 
-.aboutSignoff {
-  width: 100%;
-  // margin-top: 10%;
+.sectionTitle {
+  text-shadow: none;
+  margin-top: 7%;
 }
 
 .parallax {
@@ -218,10 +221,78 @@ header {
 }
 
 .contact {
-  z-index: -9999999;
   position: fixed;
   width: 100%;
   bottom: 1px;
   left: 1px;
-  padding-bottom: 4%;
+  padding-bottom: 5%;
+
+  h1 {
+    text-align: center;
+  }
+
+  a {
+    color: #333;
+  }
+
 }
+
+
+  .btn-5 {
+    border: 7px solid black;
+  	background: white;
+  	overflow: hidden;
+  	-webkit-backface-visibility: hidden;
+  	-moz-backface-visibility: hidden;
+  	backface-visibility: hidden;
+  }
+
+  .btn-5 h1 {
+  	display: inline-block;
+    margin: 0;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  	width: 100%;
+  	height: 100%;
+  	-webkit-transition: all 0.3s;
+  	-webkit-backface-visibility: hidden;
+  	-moz-transition: all 0.3s;
+  	-moz-backface-visibility: hidden;
+  	transition: all 0.3s;
+  	backface-visibility: hidden;
+  }
+
+  .btn-5:before {
+  	position: absolute;
+  	height: 100%;
+  	width: 100%;
+  	line-height: 2.5;
+  	font-size: 180%;
+  	-webkit-transition: all 0.3s;
+  	-moz-transition: all 0.3s;
+  	transition: all 0.3s;
+    content: "\f003";
+	  font-family: FontAwesome;
+    color: $red;
+  }
+
+  .btn-5:active:before {
+  	color: #703b87;
+  }
+
+  /* Button 5a */
+  .btn-5a:hover h1 {
+  	-webkit-transform: translateY(300%);
+  	-moz-transform: translateY(300%);
+  	-ms-transform: translateY(300%);
+  	transform: translateY(300%);
+  }
+
+  .btn-5a:before {
+  	left: 0;
+  	top: -100%;
+  }
+
+  .btn-5a:hover:before {
+  	top: 0;
+  }
