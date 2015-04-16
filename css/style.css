@@ -46,7 +46,8 @@
 
 header {
   height: 86vh;
-  border-bottom: 7px solid #000000; }
+  border-bottom: 7px solid #000000;
+  background: #BA0C2F; }
   header .headerBlock {
     width: 75%;
     margin-left: auto;
@@ -55,13 +56,13 @@ header {
       text-align: left;
       margin-top: 20%;
       font-size: 5em;
-      color: #BA0C2F; }
+      color: ghostwhite; }
     header .headerBlock h2 {
       font-family: "Helvetica", sans-serif;
       font-weight: 100;
       font-size: 3em;
       width: 75%;
-      color: gray; }
+      color: white; }
 
 .sectionTitle {
   text-align: center;
@@ -141,7 +142,7 @@ header {
     list-style-type: none; }
     .links ul li {
       display: inline-block;
-      font-size: 4em;
+      font-size: 6em;
       margin-left: 5%;
       margin-right: 5%; }
       .links ul li a {

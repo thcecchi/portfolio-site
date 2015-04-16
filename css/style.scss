@@ -61,6 +61,7 @@ $red: #BA0C2F;
 header {
   height: 86vh;
   border-bottom: 7px solid #000000;
+  background: $red;
 
   .headerBlock {
     width: 75%;
@@ -71,7 +72,7 @@ header {
       text-align: left;
       margin-top: 20%;
       font-size: 5em;
-      color: $red;
+      color: ghostwhite;
       // -webkit-animation: type 4s steps(60, end);
       // animation: type 4s steps(60, end);
     }
@@ -81,7 +82,7 @@ header {
       font-weight: 100;
       font-size: 3em;
       width: 75%;
-      color: gray;
+      color: white;
       // -webkit-animation: type2 8s steps(60, end);
       // animation: type2 8s steps(60, end);
     }
@@ -116,7 +117,6 @@ header {
   &:hover + .links {
     visibility: visible;
   }
-
 }
 
 .imgNormal {
@@ -198,7 +198,7 @@ header {
 
     li {
       display: inline-block;
-      font-size: 4em;
+      font-size: 6em;
       margin-left: 5%;
       margin-right: 5%;
 

@@ -44,6 +44,7 @@
 	display: inline-block;
 	height: 100%;
 	position: relative;
+	height: 70vh;
 }
 
 .overlay ul li {
@@ -62,6 +63,7 @@
 	color: #fff;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
+	cursor: pointer;
 }
 
 .overlay ul li a:hover,
